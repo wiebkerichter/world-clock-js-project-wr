@@ -27,6 +27,32 @@ function updateTime() {
       "HH:mm:ss [<small>]A[</small>]"
     );
   }
+
+  // Tijuana
+  let tijuanaElement = document.querySelector("#tijuana");
+  if (tijuanaElement) {
+    let tijuanaDateElement = tijuanaElement.querySelector(".date");
+    let tijuanaTimeElement = tijuanaElement.querySelector(".time");
+    let tijuanaTime = moment().tz("America/Tijuana");
+
+    tijuanaDateElement.innerHTML = tijuanaTime.format("MMMM Do YYYY");
+    tijuanaTimeElement.innerHTML = tijuanaTime.format(
+      "HH:mm:ss [<small>]A[</small>]"
+    );
+  }
+
+  // Cape Town
+  let capeTownElement = document.querySelector("#cape-town");
+  if (capeTownElement) {
+    let capeTownDateElement = capeTownElement.querySelector(".date");
+    let capeTownTimeElement = capeTownElement.querySelector(".time");
+    let capeTownTime = moment().tz("Africa/Maseru");
+
+    capeTownDateElement.innerHTML = capeTownTime.format("MMMM Do YYYY");
+    capeTownTimeElement.innerHTML = capeTownTime.format(
+      "HH:mm:ss [<small>]A[</small>]"
+    );
+  }
 }
 
 function updateCity(event) {
