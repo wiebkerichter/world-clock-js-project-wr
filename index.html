@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.40/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World clock 🕑by Wiebke Richter</title>
   </head>
   <body>
@@ -16,17 +18,17 @@
         <option value="">Bombay</option>
         <option value="">Cape Town</option>
       </select>
-      <div class="city-details">
+      <div class="city-details" id="los-angeles">
         <div class="city-date">
           <h2>Los Angeles</h2>
-          <span>December 13th 2022</span>
+          <span class="date">December 13th 2022</span>
         </div>
         <div class="time">12:11:53 <small>AM</small></div>
       </div>
-      <div class="city-details">
+      <div class="city-details" id="palma-de-mallorca">
         <div class="city-date">
           <h2>Palma de Mallorca</h2>
-          <span>December 13th 2022</span>
+          <span class="date">December 13th 2022</span>
         </div>
         <div class="time">12:11:53 <small>AM</small></div>
       </div>
